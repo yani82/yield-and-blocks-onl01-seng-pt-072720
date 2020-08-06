@@ -4,11 +4,12 @@ def hello_t(names)
     while i < names.length
     yield names[i] 
     i = i + 1
+     names
     end
   else 
     puts "Hey, no block was given!"
   end
-  names
+ 
 end
 
 # call your method here!
