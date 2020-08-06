@@ -1,9 +1,8 @@
 def hello_t(names)
   i = 0 
   while i < names.length
-  if block_given? yield names[i] 
+  yield names[i] if block_given?
     i = i + 1
-  end
   end
   names
 end
