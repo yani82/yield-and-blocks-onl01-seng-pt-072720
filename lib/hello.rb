@@ -4,6 +4,7 @@ def hello_t(names)
   if block_given? yield names[i] 
     i = i + 1
   end
+  end
   names
 end
 
